@@ -1,0 +1,135 @@
+.topBarContainer{
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.topBarRight{
+    right: 0;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.sideBarContainer{
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.5);
+    position: fixed;
+}
+
+.sideBarItemContainer{
+    padding-top: 103px;
+    border-top: 1px solid white;
+}
+
+.sideBarItem{
+    background-color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 5px 0;
+}
+
+.currentTab{
+    background-color: white;
+    width: 250px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+/*--MAIN CONTENT--*/
+.mainContentContainerContainer{
+    padding-top: 123px;
+    padding-left: 320px;
+    padding-right: 20px;
+}
+.mainContentContainer{
+    width: 100%;
+    height: calc(100vh - 143px);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    overflow-y: scroll;
+}   
+/*--MAIN CONTENT--*/
+
+.TripsContainer{
+    display: none;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.addNewTripContainer{
+    background-color: rgba(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.newTripButton{
+    background-color: rgb(35, 45, 128);
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 50px;
+    color: aliceblue;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+/*-------------------------*/
+
+.addedTripsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.trip{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: white;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 14px;
+}
+
+
+
+.newTripContainer{
+    padding: 10px 10px 20px 10px;
+    display: none;
+}
+
+/*----------*/
+
+.map{
+    height: 400px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+.tripNotes{
+    width: 100%;
+    height: 100px;
+    max-width: 600px;
+}
+
+.viewTripContainer{
+    margin-left: 10px;
+    display: none;
+}
+
+.viewStartDate{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.viewEndDate{
+    margin-top: 5px;
+    margin-left: 5px;
+}

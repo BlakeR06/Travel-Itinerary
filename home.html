@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&family=Exo+2:wght@200&family=Oswald:wght@200;300;600&family=Pacifico&family=Titan+One&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&family=Bebas+Neue&family=Exo+2:wght@200&family=Oswald:wght@200;300;600&family=Pacifico&family=Titan+One&display=swap" rel="stylesheet">   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,200&family=Bebas+Neue&family=Exo+2:wght@200&family=Oswald:wght@200;300;600&family=PT+Sans&family=Pacifico&family=Titan+One&display=swap" rel="stylesheet">
+    <!--FONTS-->
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="homeStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!--STYLES-->
+
+</head>
+<body>
+
+    <div class="backgroundImgStyle2 backGroundImg2">
+
+        <!--TOPBAR-->
+        <div class="topBarContainer">
+            <div class="topBarLeft">
+                <div class="text1 fs7 white f1">Travel Itinerary</div>
+            </div>
+            <div class="topBarRight">
+                <div class="text1 fs7 white f3" id="loggedInName"></div>
+            </div>
+        </div>
+        <!--TOPBAR-->
+
+        <!--SIDEBAR-->
+        <div class="sideBarContainer">
+            <div class="sideBarItemContainer">
+                <div class="sideBarItem">
+                    <div class="grey fs3 f1 currentTab dp" id="sideBarHome">Home</div>
+                </div>
+                <div class="sideBarItem">
+                    <div class="grey fs3 f1 dp" id="sideBarTrips">Trips</div>
+                </div>
+                <div class="sideBarItem">
+                    <div class="grey fs3 f1 dp" id="sideBarNewTrip">New Trip</div>
+                </div>
+                <div class="sideBarItem">
+                    <div class="grey fs3 f1 dp" id="sideBarAccount">Account</div>
+                </div>
+            </div>
+        </div>
+        <!--SIDEBAR-->
+
+        <!--MAIN CONTENT-->
+        <div class="mainContentContainerContainer">
+            <div class="mainContentContainer" id="mainContentContainer">
+                <div class="center1">
+                    <div class="center2 fs5 grey f1" id="contentContainerTitle">Home</div>
+                </div>
+
+               <div class="TripsContainer" id="TripsContainer">
+                    
+
+                    <div class="addNewTripContainer" id="addNewTripContainer">
+                        <div class="center1">
+                            <div class="fs4 f3 grey mt3">New Trip</div>
+                        </div>
+                        <div class="center1">
+                            <div class="newTripButton dp" id="newTripButton">+</div>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="newTripContainer" id="newTripContainer">
+                    <div class="f1 fs3">Name this Trip</div>
+                    <input type="text" placeholder="Enter name here" id="tripName">
+
+                    <div class="f1 fs3 mt3">Enter a Location</div>
+                    <input type="text" id="locationInput" placeholder="Enter a location">
+                    <button onclick="searchLocation()">View Location</button>
+                    <div id="map" class="map mt1"></div>
+
+                    <div class="f1 fs3 mt3">Start Date</div>
+                    <input type="date" id="startDate">
+
+                    <div class="f1 fs3 mt3">End Date</div>
+                    <input type="date" id="endDate">
+
+                    <div class="f1 fs3 mt3">Notes</div>
+                    <div>
+                        <textarea class="tripNotes" placeholder="Enter any notes about your trip here" id="notesInput"></textarea>
+                    </div>
+                    <button id="addTripbutton">Add Trip</button>
+               </div>
+
+               <div class="viewTripContainer" id="viewTripContainer">
+                    <div class="center1 mt3">
+                        <div class="viewStartDate fs3" id="viewStartDate"></div>
+                    </div>
+                    <div class="center1">
+                        <div class="viewEndDate fs3" id="viewEndDate"></div>
+                    </div>
+                    <div class="center1 mt3">
+                        <div class="fs3 f1">Location or Address:</div>
+                    </div>
+                    <div class="center1">
+                        <div class="grey fs3" id="viewLocation"></div>
+                    </div>
+                    <div class="center1 mt3">
+                        <div class="fs3 f1">Notes:</div>
+                    </div>
+                    <div class="center1">
+                        <div class="fs2 grey" id="viewNotes"></div>
+                    </div>
+               </div>
+
+            </div>
+        </div>
+        <!--MAIN CONTENT-->
+
+    </div>
+
+</body>
+
+<script src="homeJS.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="findLocation.js"></script>
+<script src="addNewTrips.js"></script>
+</html>

@@ -1,0 +1,151 @@
+/*--GENERAL--*/
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    border-radius: 30px;
+    width: 12px;
+}
+
+.dp{
+    cursor: pointer;
+}
+.dc{
+    cursor: default;
+}
+
+.center1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.center2{
+    margin-right: auto;
+    margin-left: auto;
+}
+/*--GENERAL--*/
+
+/*--BACKGROUNDS--*/
+.backgroundImg{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundImgStyle2{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+/*--BACKGROUNDS--*/
+
+/*--FONT SIZE--*/
+.fs1{
+    font-size: 0.5em;
+}
+.fs2{
+    font-size: 1em;
+}
+.fs3{
+    font-size: 1.5em;
+}
+.fs4{
+    font-size: 2em;
+}
+.fs5{
+    font-size: 2.5em;
+}
+.fs6{
+    font-size: 3em;
+}
+.fs7{
+    font-size: 3.5em;
+}
+.fs8{
+    font-size: 4em;
+}
+.fs9{
+    font-size: 4.5em;
+}
+.fs10{
+    font-size: 5em;
+}
+/*--FONT SIZE--*/
+
+/*--FONT STYLES--*/
+.f1{
+    font-family: 'Asap', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+.f2{
+    font-family: 'Asap', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.f3{
+    font-family: 'Asap', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+/*--FONT STYLES--*/
+
+/*--MARGIN TOP--*/
+.mt1{
+    margin-top: 5px;
+}
+.mt2{
+    margin-top: 10px;
+}
+.mt3{
+    margin-top: 15px;
+}
+.mt4{
+    margin-top: 20px;
+}
+.mt5{
+    margin-top: 25px;
+}
+.mt6{
+    margin-top: 30px;
+}
+/*--MARGIN TOP--*/
+
+/*--FONT COLORS--*/
+.white{
+    color: white;
+}
+.whiteblue{
+    color: aliceblue;
+}
+.grey{
+    color: gray;
+}
+.black{
+    color: black;
+}
+/*--FONT COLORS--*/
+
+/*--BUTTONS--*/
+.button1{
+    background-color: rgb(255, 255, 255, 0.5);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255, 0);
+    transition: border 0.2s ease;
+}
+.button1:hover{
+    border: 2px solid rgb(255, 255, 255, 1);
+}
